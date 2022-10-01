@@ -22,12 +22,16 @@ VS code is a very powerful and handy platform for you to edit texts and codes. I
 
 * Next, open VS Code. You should be able to see picture 3. To enter and run command, you will need to open the terminal in VS code. You can do this either by pressing _Ctrl+`_ or click on _Terminal_ on the top of the window and click on _New Terminal_.
 ![picture_3](https://tonyyanghan.github.io/cse15l-lab-reports/picture_3.jpg)
+
 ---
+
 2. __Setting up SSH__
 
 In order for SSH to function, you will need to have SSH Client. Please click on the link below and follow the instructions to see if you already have SSH client or need to install one.
 
 [Checking/Installing_SSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
+
+---
 
 3. __Looking up for Your Account__
 
@@ -38,7 +42,9 @@ In order for SSH to function, you will need to have SSH Client. Please click on 
 * Enter your Username(the thing before @ in your college email address. For example, the user name of a person with email address abc001@ucsd.edu is _abc001_) and PID. You will be able to see your account name with format cs15lxxxxxx(). Copy it!
 
 ![picture_4](https://tonyyanghan.github.io/cse15l-lab-reports/account_lookup_4.jpg)
+
 ---
+
 4. __Connecting to Your Remote Account__
 * Enter _ssh_ to command line, then paste your account name. Add _@ieng6.ucsd.edu_ at the end.
 For example: _accountname_@ieng6.ucsd.edu
@@ -71,7 +77,8 @@ How did I fail to log in:
 [Failed_log_in](https://tonyyanghan.github.io/cse15l-lab-reports/account_lookup_4.jpg)
 
 ---
-5. Trying some commands
+
+5. __Trying some commands__
 
 ls : will list all documents under current directory
 
@@ -82,8 +89,10 @@ cat <file_name>/<path+file_name>: print file
 cp <file_name>/<path+file_name>: copy file
 
 exit: to log out the current remote account
+
 ---
-6. Using Secure Copy command (scp)
+
+6. __Using Secure Copy command (scp)__
 
 * Firstly, create a file called WhereAmI.java to obtain some info about your current device and location. Please copy and paste the following code.
 
@@ -115,8 +124,10 @@ d. Log into the remote server and run the file
 e. Stop the timer
 
 f. Calculate and record the time it takes (in hours) to completed 100 times of operation a-e
+
 ---
-7. SSH keys
+
+7. __SSH keys__
 
 The purpose of the test above is to see how boring it can be if you are copying many files and logging in many times. Thus, there is some thing called SSH keys for you. This acts as an ID card and automatically swipes and log into the remote account when you used _ssh <account_name>@ieng6.ucsd.edu_ command. How convenient! Let's find out how to do so.
 
