@@ -68,23 +68,34 @@ Note: If you are unable to log in, you will need to change the password by follo
 5. __Trying some commands__
 
 ls : will list all documents under current directory
-![local_ls_demo](https://github.com/TonyYangHan/cse15l-lab-reports/ls_demo.jpg)
 
-cd <path>: change directory to _path_
+![local_ls_demo](https://TonyYangHan.github.io/cse15l-lab-reports/ls_demo.jpg)
 
-![local_cd_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cd_demo.jpg)
+![remote_ls_demo](https://TonyYangHan.github.io/cse15l-lab-reports/remote_ls_demo.jpg)
 
-cat <file_name>/<path+file_name>: print file
+cd <path>: change directory to _specified path_
 
-![local_cat_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cat_demo.jpg)
+![local_cd_demo](https://TonyYangHan.github.io/cse15l-lab-reports/cd_demo.jpg)
 
-cp <file_name>/<path+file_name>: copy file
+![remote_cd_demo](https://TonyYangHan.github.io/cse15l-lab-reports/remote_cd_demo.jpg)
 
-![local_cp_demo_1](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cp_demo_1.jpg)
+cat <file_name>/<path+file_name>: print file under current directory or under _specified path_
 
-![local_cp_demo_2](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cp_demo_2.jpg)
+![local_cat_demo](https://TonyYangHan.github.io/cse15l-lab-reports/cat_demo.jpg)
+
+![remote_cat_demo](https://TonyYangHan.github.io/cse15l-lab-reports/remote_cat_demo.jpg)
+
+cp <file_name>/<path+file_name>: copy file (used _ls_ to check if the copied file is present)
+
+![local_cp_demo_1](https://TonyYangHan.github.io/cse15l-lab-reports/cp_demo_1.jpg)
+
+![local_cp_demo_2](https://TonyYangHan.github.io/cse15l-lab-reports/cp_demo_2.jpg)
+
+![remote_cp_demo_1](https://TonyYangHan.github.io/cse15l-lab-reports/remote_cp_demo.jpg)
 
 exit: to log out the current remote account
+
+![exit_demo](https://TonyYangHan.github.io/cse15l-lab-reports/exit_demo.jpg)
 
 ---
 
@@ -101,11 +112,19 @@ class WhereAmI {
   }
 }
 
-* Type _javac WhereAmI.java_ into the command line to compile and _java WhereAmI_ to run.
+* On yout local computer, type _javac WhereAmI.java_ into the command line to compile and _java WhereAmI_ to run. You should be able to see output consisting of name of operating system, your user name, your home directory, and current directory like this :
 
-* Type _scp WhereAmI.java <account_name>@ieng6.ucsd.edu:~/_ to copy file from your device to that remote account.
+![local_WhereAmI](https://TonyYangHan.github.io/cse15l-lab-reports/local_WhereAmI.jpg)
 
-* Now, since you are already logged in your remote account, you need to log off and log in again. Then, use _ls_ command to check if you can see the copied _WhereAmI.java_ file
+* Type _scp WhereAmI.java <account_name>@ieng6.ucsd.edu:~/_ to copy file from your device to that remote account. Then log into it and use _ls_ to check if you have the _WhereAmI.java file_ copied like the second screenshot.
+
+![scp_demo](https://TonyYangHan.github.io/cse15l-lab-reports/scp_demo.jpg)
+
+![ls_check](https://TonyYangHan.github.io/cse15l-lab-reports/ls_check.jpg)
+
+* Now, since you are already logged in your remote account, you need to log off and log in again. Then, use _ls_ command to check if you can see the copied _WhereAmI.java_ file. Try running it using _javac_ and _java_ as you did on your local computer. You should be able to see something like this:
+
+![remote_WhereAmI](https://TonyYangHan.github.io/cse15l-lab-reports/remote_WhereAmI.jpg)
 
 * Now you have mastered another way to copy files remotely! Before you move on, please do the following:
 
@@ -121,6 +140,8 @@ e. Stop the timer
 
 f. Calculate and record the time it takes (in hours) to completed 100 times of operation a-e
 
+Note: For our group, we achieved one trial in 2 min and 20 seconds.
+
 ---
 
 7. __SSH keys__
@@ -132,17 +153,63 @@ The purpose of the test above is to see how boring it can be if you are copying 
 Note: 
 a. When given the prompt Enter file in which to save the key, press enter again to specify the default path and record this path.
 
-b. If you’re on Windows, follow the extra ssh-add steps here: [Link_ssh-add](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+![ssh_keygen](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_keygen.jpg)
 
-* Now, log into your remote server. Type command _mkdir .ssh_ and then log out.
+b. If you’re on Windows, follow the link for extra ssh-add steps. You can also follow my steps below.
 
-* Enter this command: _scp <public_key_file_path> cs15l<quarter>@ieng6.ucsd.edu:~/.ssh/authorized_keys_
+[Link_ssh-add](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 
-* After this, you should be able to log into remote server without entering password.
+
+* Step 1 Activate your ssh-agent and load your private key to that
+
+Right click on Windows icon, select _Computer Management_. Then click on _Services&Apps_ (Mine is in Chinese but please follow the screenshot). Click on Services.
+
+![ssh_agent_1](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_agent_1.jpg)
+
+Find _OpenSSH Authentication_, double click on it. Follow the screenshot. Firstly, select _automatic_ from the drop-down menu. Then click start to activate ssh-agent. Then click OK to save those settings
+
+![ssh_agent_2](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_agent_2.jpg)
+
+![ssh_agent_3](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_agent_3.jpg)
+
+Now you will load your private key to ssh-agent
+Type the following command in the terminal:
+
+![ssh_agent_4](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_agent_4.jpg)
+
+Now you have set up your private key so that every time ssh-agent is going to automatically check keys and log you in when you use ssh command to log in.
+
+* Step 2 Set up your public key
+
+You need to load your public key onto your remote account in order to let it function. Log into your remote account by password and type _mkdir .ssh_ in the command line to create a directory called .ssh on your remote server and then log out by typing _exit_
+
+![ssh_public_1](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_public_1.jpg)
+
+On your local computer, type this:
+Note: you will need to replace the path in the screenshot with your own path that stores the file
+
+```
+scp <ssh_path_ending_with_.pub> cs15lfa22xx@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+
+![ssh_public_2](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_public_2.jpg)
+
+If you can see the file name in the screenshot it means that your key has been successfully copied to your remote account
+Now you should be able to log in without using passwords.
+
+![ssh_public_3](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_public_3.jpg)
+
 ---
 8. Make the process even smoothier
 
-* You can run multiple commands or copy multiple files at the same time! Just remember to separate each file with a space and use semicolon to separate different commands.
+* You can run multiple commands or copy multiple files at the same time! Just remember to separate each file with a space and use semicolon to separate different commands. If the starting command is ssh, you need to quote the following commands.
+
+```
+ssh cs15lfa22xx@ieng6.ucsd.edu "javac" WhereAmI.java
+ssh cs15lfa22xx@ieng6.ucsd.edu "java" WhereAmI
+```
+
+![multiple_cmds](https://TonyYangHan.github.io/cse15l-lab-reports/multiple_cmds.jpg)
 
 * Try timing the process and refine the process yourself!
 
