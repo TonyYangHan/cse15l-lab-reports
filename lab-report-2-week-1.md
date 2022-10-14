@@ -31,6 +31,11 @@ In order for SSH to function, you will need to have SSH Client. Please click on 
 
 [Checking/Installing_SSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
 
+
+Go to Settings> Apps > Optional features or directly search optional features in your searchline, and you will see a list of features. Check for a thing called _OpenSSH Client_. If you have this you are good to go. If you don't, please follow the instructions provided in the above link.
+
+![check_SSH](https://tonyyanghan.github.io/cse15l-lab-reports/check_ssh.jpg)
+
 ---
 
 3. __Looking up for Your Account__
@@ -39,7 +44,7 @@ In order for SSH to function, you will need to have SSH Client. Please click on 
 
     [Link_to_account_search](https://sdacs.ucsd.edu/~icc/index.php)
 
-* Enter your Username(the thing before @ in your college email address. For example, the user name of a person with email address abc001@ucsd.edu is _abc001_) and PID. You will be able to see your account name with format cs15lxxxxxx(). Copy it!
+* Enter your Username(the thing before @ in your college email address. For example, the user name of a person with email address abc001@ucsd.edu is _abc001_ and PID. You will be able to see your account name with format cs15lxxxxxx. Copy it!
 
 ![picture_4](https://tonyyanghan.github.io/cse15l-lab-reports/account_lookup_4.jpg)
 
@@ -186,6 +191,7 @@ You need to load your public key onto your remote account in order to let it fun
 ![ssh_public_1](https://TonyYangHan.github.io/cse15l-lab-reports/ssh_public_1.jpg)
 
 On your local computer, type this:
+
 Note: you will need to replace the path in the screenshot with your own path that stores the file
 
 ```
