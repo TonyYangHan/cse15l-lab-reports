@@ -68,7 +68,7 @@ Note: If you are unable to log in, you will need to change the password by follo
 5. __Trying some commands__
 
 ls : will list all documents under current directory
-![local_ls_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/ls_demo.jpg)
+![local_ls_demo](https://github.com/TonyYangHan/cse15l-lab-reports/ls_demo.jpg)
 
 cd <path>: change directory to _path_
 
