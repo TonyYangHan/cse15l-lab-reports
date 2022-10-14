@@ -56,6 +56,8 @@ For example: _accountname_@ieng6.ucsd.edu
 
 * Since you are probably using SSH for the first time, the remote access may fail to establish. The system may ask you a question if you are continue connecting or not. Simply type _yes_ and press _enter_ key.
 
+![ssh_first_time](https://tonyyanghan.github.io/cse15l-lab-reports/ssh_first_time.jpg)
+
 * The system will ask password from you. The default password is the same as your MyTritonLink.
 
 * The system will return successful log in message or will ask you to enter the passwords again(which means log-in failed)
@@ -108,6 +110,7 @@ exit: to log out the current remote account
 
 * Firstly, create a file called WhereAmI.java to obtain some info about your current device and location. Please copy and paste the following code.
 
+```
 class WhereAmI {
   public static void main(String[] args) {
     System.out.println(System.getProperty("os.name"));
@@ -116,6 +119,7 @@ class WhereAmI {
     System.out.println(System.getProperty("user.dir"));
   }
 }
+```
 
 * On yout local computer, type _javac WhereAmI.java_ into the command line to compile and _java WhereAmI_ to run. You should be able to see output consisting of name of operating system, your user name, your home directory, and current directory like this :
 
@@ -143,7 +147,7 @@ d. Log into the remote server and run the file
 
 e. Stop the timer
 
-f. Calculate and record the time it takes (in hours) to completed 100 times of operation a-e
+f. Calculate and record the time it takes (in hours) to completed 100 times of operation a to e
 
 Note: For our group, we achieved one trial in 2 min and 20 seconds.
 
