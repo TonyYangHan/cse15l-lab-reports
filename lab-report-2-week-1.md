@@ -63,30 +63,26 @@ Note: If you are unable to log in, you will need to change the password by follo
 
 * Wait 5-20 minutes before you try logging in again.
 
-IMPORTANT:
-
-__I failed at this step (not be able to offer screenshots for further steps)__
-
-How did I fail to log in:
-1. I tried resetting password three times, but I failed to login even using up the chance to enter password each time.
-2. I used the computers at Lab B260 but it did not work.
-3. I came to Professor's office hour to solve the issue but still failed to log in.
-
-![Failed_log_in](https://tonyyanghan.github.io/cse15l-lab-reports/account_lookup_4.jpg)
-
-[Failed_log_in](https://tonyyanghan.github.io/cse15l-lab-reports/account_lookup_4.jpg)
-
 ---
 
 5. __Trying some commands__
 
 ls : will list all documents under current directory
-![ls_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/ls_demo.jpg)
+![local_ls_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/ls_demo.jpg)
+
 cd <path>: change directory to _path_
+
+![local_cd_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cd_demo.jpg)
 
 cat <file_name>/<path+file_name>: print file
 
+![local_cat_demo](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cat_demo.jpg)
+
 cp <file_name>/<path+file_name>: copy file
+
+![local_cp_demo_1](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cp_demo_1.jpg)
+
+![local_cp_demo_2](https://github.com/TonyYangHan/cse15l-lab-reports/blob/1cf96aac845fe71416446f8958505e954f8cd7b4/cp_demo_2.jpg)
 
 exit: to log out the current remote account
 
