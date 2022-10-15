@@ -98,7 +98,7 @@ After this, I initialized a _String_ result ="Search results: \n" and use a for 
 
 When I enter the url with search term that does not match any elements in the _dataBase_, the main method is called. The port number is set to args[0] and a _SearchThings_ class is created by calling the constructor. 
 
-The .handleRequest(URI url) is then called with intake paramer of the url I entered. Then, the url's _Path_ is pulled out by .getPath() method and goes into boolean comparison. The rest process is mostly similar to the process describe above. However, since the no term is matched in the _dataBase_, it will return _String_ "Search result:" with nothing under it.
+The .handleRequest(URI url) is then called with intake paramer of the url I entered. Then, the url's _Path_ is pulled out by .getPath() method and goes into boolean comparison. The rest process is mostly similar to the process describe above. (for-loop search and adding the matching _String_)However, since the no term is matched in the _dataBase_, it will return _String_ "Search result:" with nothing under it.
 
 ---
 
