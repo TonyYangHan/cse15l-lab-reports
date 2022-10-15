@@ -11,4 +11,4 @@ _This is a message from Geisel_
 
 [Lab_Report_2](https://TonyYangHan.github.io/cse15l-lab-reports/lab-report-2-week-1.html)
 
-[Lab_Report_3] ((https://TonyYangHan.github.io/cse15l-lab-reports/lab-report-3-week-3.html)
+[Lab_Report_3](https://TonyYangHan.github.io/cse15l-lab-reports/lab-report-3-week-3.html)
