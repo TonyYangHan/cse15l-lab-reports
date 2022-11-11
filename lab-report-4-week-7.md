@@ -1,12 +1,13 @@
 # CSE 15L Lab Report 4 Week 7
 
 Author: Yang Han
+
 PID: A16916031
 
 Vim is a really useful tool when comes to editing files on a remote server. On a remote server, it is likely that there is no available and handy text editor such as VS Code. Vim offered people ability to edit files on the remote server directly without using scp to update files(which is a lot of typing).
 
 ## Part 1 Trying Vim
-In this report, I will use vim to change all occurence of `start` in DocSearchServer.java on the remote server. The sequence of keys that I pressed are shown below.
+In this report, I will use vim to change all occurence of `start` in DocSearchServer.java on the remote server. The sequence of keys that I pressed is shown below.
 
 Overall Sequence:
 `/start<Enter>cebase<Esc>n.n.`
@@ -45,7 +46,7 @@ This brings the cursor to the next search result.
 
 ![pressed-n](https://TonyYangHan.github.io/cse15l-lab-reports/pressed-n.jpg)
 
-* Then pressed `.`
+* Then pressed `.` (full stop)
 
 `.` means repeat the last modification (which is changing `start` to `base`) We avoided manually typing!
 
@@ -93,10 +94,10 @@ I used 27.46 seconds using Vim on remote server
 
 Which of these two styles would you prefer using if you had to work on a program that you were running remotely, and why?
 
-Generally, I prefer using local editor(VS Code) to edit the file and then scp it to the appropriate folder on the remote server. Because I am very familiar with local editor, I can make edits faster. Also, the local editor has AI assisted auto-completion during typing and error message display(red lines under codes), which help minimize errors. Typing scp command part is the most time-consuming one. However, if I typed the command previously, I can easily retrieve them by using up and down arrow so that I do not have to type again. Therefore, using the local editor then scp to the remote server will not only save some time but will also minimize the occurence of errors, which further saves time on debugging.
+Generally, I prefer using local editor(VS Code) to edit the file and then scp it to the appropriate folder on the remote server. Because I am very familiar with local editor, I can make edits faster. Also, the local editor has AI assisted auto-completion during typing and error message display(red lines under codes), which help minimize errors. Typing scp command part is the most time-consuming one. However, if I typed the command previously, I can easily retrieve them by using up and down arrow so that I do not have to type again. Therefore, in many cases, using the local editor then scp to the remote server will not only save some time but will also minimize the occurence of errors, which further saves time on debugging.
 
 * Question 2:
 
 What about the project or task might factor into your decision one way or another? (If nothing would affect your decision, say so and why!)
 
-However, in acual working circumstances, the choice between local editor+scp and Vim depends on my intentions. For example, if I made a few typos in the file, it would be easier to use Vim since I can edit the file directly (As I become more familiar with Vim in the future, the edit time decreases)without typing/finding the correct scp command. However, for large edits, such as writing the first draft of code, I would prefer to use VS Code since it has automated completion(saves time in typing and reduces typos) and error message (redlines under the code to help prevent some error from occuring).
+However, in acual working circumstances, the choice between local editor+scp and Vim depends on my intentions. For example, if I made a few typos in the file, it would be easier to use Vim since I can edit the file directly (As I become more familiar with Vim in the future, the edit time decreases)without typing/finding the correct scp command. However, for large edits, such as writing the first draft of code, I would prefer to use VS Code since it has automated completion(saves time in typing and reduces typos) and error message (redlines under the code to help prevent some errors from occuring).
