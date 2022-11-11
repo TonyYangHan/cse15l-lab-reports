@@ -19,6 +19,8 @@ _This is a message from Geisel_
 
 [Lab_Report_4](https://tonyyanghan.github.io/cse15l-lab-reports/lab-report-4-week-5.html)
 
+[Lab_Report_5](https://tonyyanghan.github.io/cse15l-lab-reports/lab-report-5-week-7.html)
+
 
 
 
