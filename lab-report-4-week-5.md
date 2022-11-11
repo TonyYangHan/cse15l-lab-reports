@@ -21,7 +21,7 @@ technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 technical/government/Gen_Account_Office/d01591sp.txt
 ```
 
-* The command line entry below returns all files that have sizes below 2kB
+* The command line entry below returns all files under `technical/` directory that have sizes below 2kB
 
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:252$ find technical/ -size -2k
