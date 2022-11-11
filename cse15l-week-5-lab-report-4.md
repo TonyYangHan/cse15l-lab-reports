@@ -6,6 +6,7 @@ PID: A16916031
 The `find` command in linux is a really useful command for us to find some files or directories. For this command, many options are available so that we can use the different options to achieve different purposes. In this report, `-size`, `-mmin`, `-ls` (and combinations with other options)will be explored in finding files.
 
 * `-size` option
+
 1. The command line entry below returns all the files under `technical/` directory that have sizes greater than 200kB.
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:246$ find technical/ -size +200k
@@ -37,6 +38,7 @@ technical/plos/pmed.0020226.txt
 
 ---
 * `-mmin` option
+
 1. The command line entry below returns the file under `technical/` directory that I modified in the past 10 minutes.
 
 ```
@@ -64,6 +66,7 @@ This options is useful because it allow me view the files I recently modified at
 
 ---
 * `-ls` option
+
 1. This command line entry below returns a list of information of all files with a pattern of `chapter*.txt` in `technical/911report/` directory that have sizes smaller than 50kB.
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:319$ find technical/911report/chapter*.txt -size -50k -ls
