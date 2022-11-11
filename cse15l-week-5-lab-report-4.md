@@ -7,8 +7,8 @@ The `find` command in linux is a really useful command for us to find some files
 
 * `-size` option
 
->1. The command line entry below returns all the files under `technical/` directory that have sizes greater than 200kB.
->
+1. The command line entry below returns all the files under `technical/` directory that have sizes greater than 200kB.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:246$ find technical/ -size +200k
 technical/911report/chapter-13.4.txt
@@ -21,16 +21,16 @@ technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 technical/government/Gen_Account_Office/d01591sp.txt
 ```
 
->2. The command line entry below returns all files that have sizes below 2kB
->
+2. The command line entry below returns all files that have sizes below 2kB
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:252$ find technical/ -size -2k
 technical/plos/pmed.0020191.txt
 technical/plos/pmed.0020226.txt
 ```
 
->3. The command line entry below shows how `-size` can combine with `-exec` to remove all files under `technical/` directory that have sizes below 2kB. This is being checked later by finding all files under `technical/` that have sizes below 2kB. The empty result indicated a successful removal.
->
+3. The command line entry below shows how `-size` can combine with `-exec` to remove all files under `technical/` directory that have sizes below 2kB. This is being checked later by finding all files under `technical/` that have sizes below 2kB. The empty result indicated a successful removal.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:254$ find technical/ -size -2k -exec rm {} \;
 [cs15lfa22qj@ieng6-203]:skill-demo1:255$ find technical/ -size -2k
@@ -42,15 +42,15 @@ technical/plos/pmed.0020226.txt
 ---
 * `-mmin` option
 
->1. The command line entry below returns the file under `technical/` directory that I modified in the past 10 minutes.
->
+1. The command line entry below returns the file under `technical/` directory that I modified in the past 10 minutes.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:315$ find technical/911report -mmin -10
 technical/911report/chapter-8.txt
 ```
 
->2. The command line entry below returns the file and sub-directory under `technical/` directory that I modified in the past 120 minutes.
->
+2. The command line entry below returns the file and sub-directory under `technical/` directory that I modified in the past 120 minutes.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:324$ find technical/ -mmin -120
 technical/911report/chapter-1.txt
@@ -59,8 +59,8 @@ technical/911report/chapter-8.txt
 technical/plos
 ```
 
->3. The command line entry below returns the sub-directory under `technical/` directory that I modified in the past 120 minutes. (`-type` restricts the type of output to directories only)
->
+3. The command line entry below returns the sub-directory under `technical/` directory that I modified in the past 120 minutes. (`-type` restricts the type of output to directories only)
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:326$ find technical/ -type d -mmin -120
 technical/plos
@@ -71,22 +71,22 @@ This options is useful because it allow me view the files I recently modified at
 ---
 * `-ls` option
 
->1. This command line entry below returns a list of information of all files with a pattern of `chapter*.txt` in `technical/911report/` directory that have sizes smaller than 50kB.
->
+1. This command line entry below returns a list of information of all files with a pattern of `chapter*.txt` in `technical/911report/` directory that have sizes smaller than 50kB.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:319$ find technical/911report/chapter*.txt -size -50k -ls
 50002714   52 -rwxr-x---   1 cs15lfa22qj ieng6_cs15lfa22    47307 Oct 26 09:35 technical/911report/chapter-10.txt
 ```
 
->2. This command line entry below returns a list of information of all files with a pattern of `*.txt` (all `.txt` files) in `technical/911report/` directory that have sizes smaller than 50kB.
->
+2. This command line entry below returns a list of information of all files with a pattern of `*.txt` (all `.txt` files) in `technical/911report/` directory that have sizes smaller than 50kB.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:320$ find technical/biomed/*.txt -size -10k -ls
 50003598    8 -rwxr-x---   1 cs15lfa22qj ieng6_cs15lfa22     6297 Oct 26 09:35 technical/biomed/1471-2334-3-13.txt
 50135042    8 -rwxr-x---   1 cs15lfa22qj ieng6_cs15lfa22     6804 Oct 26 09:35 technical/biomed/1471-2490-3-2.txt
 ```
->3. This command line entry returns a listing of information of all `.txt` files with a path of pattern `technical/*/*.txt` that have sizes smaller than 3kB.
->
+3. This command line entry returns a listing of information of all `.txt` files with a path of pattern `technical/*/*.txt` that have sizes smaller than 3kB.
+
 ```
 [cs15lfa22qj@ieng6-203]:skill-demo1:321$ find technical/*/*.txt -size -3k -ls
 50138075    4 -rwxr-x---   1 cs15lfa22qj ieng6_cs15lfa22     2016 Oct 26 09:35 technical/plos/pmed.0020028.txt
