@@ -10,7 +10,7 @@ Vim is a really useful tool when comes to editing files on a remote server. On a
 In this report, I will use vim to change all occurence of `start` in DocSearchServer.java on the remote server. The sequence of keys that I pressed is shown below.
 
 Overall Sequence:
-`/start<Enter>cebase<Esc>n.n.`
+`/start<Enter>cebase<Esc>n.n.:wq<Enter>`
 
 * When I just entered DocSearchServer.java using vim:
 
