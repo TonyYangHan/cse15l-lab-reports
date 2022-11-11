@@ -97,7 +97,7 @@ technical/plos
 50138206    4 -rwxr-x---   1 cs15lfa22qj ieng6_cs15lfa22     1042 Oct 26 09:35 technical/plos/pmed.0020192.txt
 ```
 
-`-ls` is useful because it lists the information of the resulting files so that I can see the last modified time and characters in them without taking extra steps looking for information for each file. 
+`-ls` option is useful because it lists the information of the resulting files so that I can see the last modified time and characters in them without taking extra steps looking for information for each file. 
 
 ## The END! Thank you!
 
