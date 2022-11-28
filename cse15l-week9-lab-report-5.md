@@ -76,7 +76,7 @@ echo "Your score: $score/2"
 
 * Tracing GradeServer_2 (corrected repo):
 
-When the URL is loaded with repo to the Grade Server, the GradeServer.java splits the query and run bash command with argument grade.sh and the repo specified in the URL.
+When the URL is loaded with repo to the Grade Server, the GradeServer.java splits the query and run bash command with arguments grade.sh and the repo specified in the URL.
 
 ### Part 1:
 
@@ -93,7 +93,7 @@ cd ~/week_7/student-submission
 echo "in the dir"
 ```
 
-From the start of the program to line 12 `echo "in the dir"` can hardly be wrong since they are defining variables, cloning the repo, copying the test files, and reporint the status using echo. Thus, there are hardly any standard error if the URL given is correct. There are also no standard outputs for these commands except `git clone` and `echo`. The first standard output that prints is from `git clone`:
+From the start of the program to line 12 `echo "in the dir"` can hardly be wrong since they are defining variables, cloning the repo, copying the test files, and reporting the status using echo. Thus, there are hardly any standard error if the URL given is correct. There are also no standard outputs for these commands except `git clone` and `echo`. The first standard output that prints is from `git clone`:
 
 ```
 Cloning into '/home/linux/ieng6/cs15lfa22/cs15lfa22qj/week_7/student-submission'...
@@ -151,7 +151,7 @@ echo "java executed"
 
 In this part, `java` runs the compiled `ListExamples.java` along with test files. The standard output is directed into `std_out.txt`. There are no standard error because the corrected `ListExamples.java` runs perfectly. The exit code is 0 since there is no error. The program then `echo "java executed"`.
 
-The standard output is like this:
+The standard output in `std_out.txt` is like this:
 
 ```
 JUnit version 4.13.2
