@@ -78,7 +78,7 @@ echo "Your score: $score/2"
 
 When the URL is loaded with repo to the Grade Server, the GradeServer.java splits the query and run bash command with argument grade.sh and the repo specified in the URL.
 
-1. Part 1:
+### Part 1:
 
 ```
 CP=".:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar"
@@ -107,7 +107,7 @@ copied
 in the dir
 ```
 
-2. Part 2
+### Part 2
 
 ```
 if [ -f $fileName ] && [ -e $fileName ]
@@ -123,7 +123,7 @@ fi
 
 Now we are in the student-submission directory. The if statement in line 14 checks if the file `ListExampels.java` exists. It is evaluated to be true because `ListExamples.java` does exist in the corrected repo so it `echo "File Found"`.
 
-3. Part 3
+### Part 3
 
 ```
 javac -cp $CP *.java
@@ -142,7 +142,7 @@ Then javac in line 24 runs to compile all *.java files in the repo along with th
 
 The if statement that follows evaluates to be false because the exit code ($?) is 0. Then the program `echo "compiled"` to report the status.
 
-4. Part 4
+### Part 4
 
 ```
 java -cp $CP org.junit.runner.JUnitCore TestListExamples > std_out.txt
@@ -161,7 +161,7 @@ Time: 0.01
 OK (2 tests)
 ```
 
-5. Part 5
+### Part 5
 
 ```
 if [ $(grep -c "testFilter_CheckAll(TestListExamples)" std_out.txt) -eq 1 ]
